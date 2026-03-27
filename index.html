@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozas e Hijos | Boutique Real Estate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --fondo: #F9F7F2;
+            --tierra-oscuro: #4A3728;
+            --tierra-medio: #8C7E6D;
+            --acento: #B87333;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--fondo);
+            color: var(--tierra-oscuro);
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 80px 20px 40px;
+            text-align: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .slogan {
+            font-size: 0.8rem;
+            letter-spacing: 5px;
+            color: var(--tierra-medio);
+            text-transform: uppercase;
+        }
+
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 500;
+            border-top: 1px solid #E2DED0;
+            border-bottom: 1px solid #E2DED0;
+            padding: 40px 0;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px 80px;
+        }
+
+        .grid-propiedades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            border: 1px solid #eee;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .card-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-color: #e0e0e0;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            filter: sepia(10%);
+        }
+
+        .card-info {
+            padding: 25px;
+        }
+
+        .card-titulo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin: 0 0 5px 0;
+            font-weight: 500;
+        }
+
+        .card-ubicacion {
+            font-size: 0.85rem;
+            color: var(--tierra-medio);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .card-precio {
+            font-size: 1.1rem;
+            color: var(--tierra-oscuro);
+        }
+
+        .card-precio strong {
+            font-weight: 700;
+        }
+
+        .boton-facebook {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--acento);
+            border-bottom: 1px solid var(--acento);
+            padding-bottom: 3px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 80px 20px;
+            font-size: 0.75rem;
+            color: var(--tierra-medio);
+            letter-spacing: 1px;
+            border-top: 1px solid #E2DED0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .logo { font-size: 2rem; }
+            h1 { font-size: 1.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Rozas e Hijos</div>
+        <div class="slogan">Boutique Real Estate Company</div>
+    </header>
+
+    <section class="hero">
+        <h1>PROPIEDADES CON ALTA PLUSVALÍA <br> EN LA IV REGIÓN</h1>
+    </section>
+
+    <div class="container">
+        <div class="grid-propiedades">
+            
+            <a href="https://www.facebook.com/marketplace/item/4178557005731590" target="_blank" class="card-link">
+                <article class="card">
+                    <img src="panul.jpg" alt="Casa Off-Grid" class="card-img">
+                    <div class="card-info">
+                        <h2 class="card-titulo">Casa Off-Grid</h2>
+                        <p class="card-ubicacion">Ensenada Panul, Coquimbo</p>
+                        <p class="card-precio">Por solo <strong>5.000 UF</strong></p>
+                    </div>
+                </article>
+            </a>
+
+            <a href="https://www.facebook.com/marketplace/item/1925522664752324" target="_blank" class="card-link">
+                <article class="card">
+                    <img src="pandeazucar.jpg" alt="Propiedad Altovalsol" class="card-img">
+                    <div class="card-info">
+                        <h2 class="card-titulo">Terreno Altovalsol</h2>
+                        <p class="card-ubicacion">Altovalsol, La Serena</p>
+                        <p class="card-precio">Por Solo <strong>2.510 UF</strong></p>
+                        
+                    </div>
+                </article>
+            </a>
+
+            <a href="https://www.facebook.com/marketplace/item/965734375831438" target="_blank" class="card-link">
+                <article class="card">
+                    <img src="piscoelqui.jpg" alt="Propiedad Pisco Elqui" class="card-img">
+                    <div class="card-info">
+                        <h2 class="card-titulo">Terreno con Rio</h2>
+                        <p class="card-ubicacion">Pisco Elqui, Valle de Elqui</p>
+                        <p class="card-precio">Por Solo <strong>3.515 UF</strong></p>
+                       
+                    </div>
+                </article>
+            </a>
+
+            <a href="https://www.facebook.com/marketplace/item/2373564623118651" target="_blank" class="card-link">
+                <article class="card">
+                    <img src="herradura.jpg" alt="Terreno Herradura" class="card-img">
+                    <div class="card-info">
+                        <h2 class="card-titulo">Terreno Herradura</h2>
+                        <p class="card-ubicacion">La Herradura, Coquimbo</p>
+                        <p class="card-precio">Por solo <strong>3.900 UF</strong></p>
+                    </div>
+                </article>
+            </a>
+
+            <a href="https://www.facebook.com/marketplace/item/2373298039802838" target="_blank" class="card-link">
+                <article class="card">
+                    <img src="ruta43.jpg" alt="Propiedad Pan de Azucar" class="card-img">
+                    <div class="card-info">
+                        <h2 class="card-titulo">Terreno Ruta 43</h2>
+                        <p class="card-ubicacion">Pan de Azúcar, Coquimbo</p>
+                        <p class="card-precio">Por Solo <strong>1.130 UF</strong></p>
+                       
+                    </div>
+                </article>
+            </a>
+
+            <a href="https://www.facebook.com/marketplace/item/1649000362978582" target="_blank" class="card-link">
+                <article class="card">
+                    <img src="lisitas.jpg" alt="Propiedad Guanaqueros" class="card-img">
+                    <div class="card-info">
+                        <h2 class="card-titulo">Terrenos Urbanos</h2>
+                        <p class="card-ubicacion">Las Lisitas, Guanaqueros</p>
+                        <p class="card-precio">Por Solo <strong>3.515 UF</strong></p>
+                       
+                    </div>
+                </article>
+            </a>
+
+        </div>
+    </div>
+
+    <footer>
+       	<style>
+        /* Agrega o actualiza estas líneas en tu sección de <style> */
+        .contacto-footer {
+            font-size: 1.1rem; /* Tamaño más grande */
+            margin-bottom: 20px;
+        }
+        
+        .contacto-link {
+            color: var(--tierra-oscuro);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid var(--acento);
+            margin: 0 10px;
+            padding-bottom: 2px;
+            transition: color 0.3s ease;
+        }
+
+        .contacto-link:hover {
+            color: var(--acento);
+        }
+    </style>
+
+    <footer>
+        <div class="contacto-footer">
+            <a href="https://wa.me/56939657145" target="_blank" class="contacto-link">WhatsApp: +569 39657145</a>
+            <a href="mailto:juanrozasreymond@gmail.com" target="_blank" class="contacto-link">juanrozasreymond@gmail.com</a>
+        </div>
+        <p>&copy; 2026 ROZAS E HIJOS - DESARROLLO INMOBILIARIO</p>
+        <p>LA SERENA & COQUIMBO, CHILE</p>
+    </footer>
+    </footer>
+
+</body>
+</html>
