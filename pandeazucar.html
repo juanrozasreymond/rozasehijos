@@ -147,6 +147,12 @@
        @media (max-width: 600px) {
             h1 { font-size: 1.7rem; }
             .logo-img { max-width: 300px; }
+
+            /* 🔥 ÚNICO CAMBIO */
+            img[src*="819"] {
+                width: 100% !important;
+                height: auto !important;
+            }
         }
     </style>
 </head>
@@ -189,12 +195,11 @@
             padding: 20px;
         }
 
-        /* La "Card" ahora es un contenedor horizontal */
         .propiedad-horizontal {
-            display: flex; /* Alinea imagen y texto de lado a lado */
+            display: flex;
             align-items: center;
             background: #fff;
-            margin-bottom: 30px; /* Espacio para el scroll vertical */
+            margin-bottom: 30px;
             text-decoration: none;
             color: inherit;
             border: 1px solid #E2DED0;
@@ -203,13 +208,12 @@
         }
 
         .propiedad-horizontal:hover {
-            transform: translateX(10px); /* Efecto sutil al pasar el mouse */
+            transform: translateX(10px);
             box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
         }
 
-        /* Lado Izquierdo: La Imagen */
         .img-container {
-            flex: 0 0 45%; /* Ocupa el 45% del ancho */
+            flex: 0 0 45%;
             height: 300px;
         }
 
@@ -219,9 +223,8 @@
             object-fit: cover;
         }
 
-        /* Lado Derecho: La Información */
         .info-container {
-            flex: 1; /* Ocupa el resto del espacio */
+            flex: 1;
             padding: 40px;
         }
 
@@ -257,9 +260,8 @@
             margin: 0 auto;
         }
 
-        /* Estructura de la Fila */
         .fila-propiedad {
-            display: table; /* Forma más estable de poner cosas de lado a lado */
+            display: table;
             width: 100%;
             background: white;
             margin-bottom: 30px;
@@ -268,12 +270,11 @@
             color: #333;
         }
 
-        /* Columna Izquierda: Imagen */
         .col-imagen {
             display: table-cell;
             width: 50%;
             vertical-align: middle;
-            background-color: #eee; /* Fondo gris por si la imagen falla, verás un bloque gris */
+            background-color: #eee;
         }
 
         .col-imagen img {
@@ -282,7 +283,6 @@
             height: auto;
         }
 
-        /* Columna Derecha: Texto */
         .col-texto {
             display: table-cell;
             width: 50%;
@@ -294,7 +294,6 @@
         p { margin: 0 0 20px 0; color: #666; line-height: 1.5; }
         .precio { font-weight: bold; color: #B87333; font-size: 18px; }
 
-        /* Para celulares */
         @media (max-width: 600px) {
             .col-imagen, .col-texto { display: block; width: 100%; }
         }
@@ -308,7 +307,6 @@
             <div class="col-imagen">
                 <img src="819fbacc-0dd9-48ee-801f-90f493d4c4d9.png" alt="Propiedad Pan de Azúcar">
             </div>
-            
         </a>
 
     </div>
@@ -318,10 +316,9 @@
     </div>
 
     <footer>
-       	<style>
-        /* Agrega o actualiza estas líneas en tu sección de <style> */
+        <style>
         .contacto-footer {
-            font-size: 1.1rem; /* Tamaño más grande */
+            font-size: 1.1rem;
             margin-bottom: 20px;
         }
         
