@@ -23,28 +23,21 @@
         }
 
         header {
-            padding: 80px 20px 40px;
+            padding: 60px 20px 20px;
             text-align: center;
         }
 
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            letter-spacing: 2px;
-            margin-bottom: 5px;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-
-        .slogan {
-            font-size: 0.8rem;
-            letter-spacing: 5px;
-            color: var(--tierra-medio);
-            text-transform: uppercase;
+        /* Estilo para el logo en imagen */
+        .logo-img {
+            max-width: 450px; /* Ajusta este valor según prefieras el tamaño del logo */
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
         }
 
         .hero {
-            padding: 60px 20px;
+            padding: 40px 20px;
             text-align: center;
             max-width: 900px;
             margin: 0 auto;
@@ -123,17 +116,6 @@
             font-weight: 700;
         }
 
-        .boton-facebook {
-            display: inline-block;
-            margin-top: 15px;
-            font-size: 0.8rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: var(--acento);
-            border-bottom: 1px solid var(--acento);
-            padding-bottom: 3px;
-        }
-
         footer {
             text-align: center;
             padding: 80px 20px;
@@ -144,17 +126,36 @@
             margin-top: 40px;
         }
 
+        .contacto-footer {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        
+        .contacto-link {
+            color: var(--tierra-oscuro);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid var(--acento);
+            margin: 0 10px;
+            padding-bottom: 2px;
+            transition: color 0.3s ease;
+            display: inline-block;
+        }
+
+        .contacto-link:hover {
+            color: var(--acento);
+        }
+
         @media (max-width: 600px) {
-            .logo { font-size: 2rem; }
             h1 { font-size: 1.7rem; }
+            .logo-img { max-width: 300px; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="logo">Rozas e Hijos</div>
-        <div class="slogan">Boutique Real Estate Company</div>
+        <img src="ChatGPT%20Image%20Mar%2028,%202026,%2012_11_46%20PM.png" alt="Rozas e Hijos Boutique Real Estate" class="logo-img">
     </header>
 
     <section class="hero">
@@ -182,7 +183,6 @@
                         <h2 class="card-titulo">Terreno Altovalsol</h2>
                         <p class="card-ubicacion">Altovalsol, La Serena</p>
                         <p class="card-precio">Por Solo <strong>2.510 UF</strong></p>
-                        
                     </div>
                 </article>
             </a>
@@ -194,7 +194,6 @@
                         <h2 class="card-titulo">Terreno con Rio</h2>
                         <p class="card-ubicacion">Pisco Elqui, Valle de Elqui</p>
                         <p class="card-precio">Por Solo <strong>3.515 UF</strong></p>
-                       
                     </div>
                 </article>
             </a>
@@ -217,7 +216,6 @@
                         <h2 class="card-titulo">Terreno Ruta 43</h2>
                         <p class="card-ubicacion">Pan de Azúcar, Coquimbo</p>
                         <p class="card-precio">Por Solo <strong>1.130 UF</strong></p>
-                       
                     </div>
                 </article>
             </a>
@@ -229,7 +227,6 @@
                         <h2 class="card-titulo">Terrenos Urbanos</h2>
                         <p class="card-ubicacion">Las Lisitas, Guanaqueros</p>
                         <p class="card-precio">Por Solo <strong>3.000 UF</strong></p>
-                       
                     </div>
                 </article>
             </a>
@@ -238,36 +235,12 @@
     </div>
 
     <footer>
-       	<style>
-        /* Agrega o actualiza estas líneas en tu sección de <style> */
-        .contacto-footer {
-            font-size: 1.1rem; /* Tamaño más grande */
-            margin-bottom: 20px;
-        }
-        
-        .contacto-link {
-            color: var(--tierra-oscuro);
-            text-decoration: none;
-            font-weight: 500;
-            border-bottom: 1px solid var(--acento);
-            margin: 0 10px;
-            padding-bottom: 2px;
-            transition: color 0.3s ease;
-        }
-
-        .contacto-link:hover {
-            color: var(--acento);
-        }
-    </style>
-
-    <footer>
         <div class="contacto-footer">
             <a href="https://wa.me/56939657145" target="_blank" class="contacto-link">WhatsApp: +569 39657145</a>
             <a href="mailto:juanrozasreymond@gmail.com" target="_blank" class="contacto-link">juanrozasreymond@gmail.com</a>
         </div>
         <p>&copy; 2026 ROZAS E HIJOS - DESARROLLO INMOBILIARIO</p>
         <p>LA SERENA & COQUIMBO, CHILE</p>
-    </footer>
     </footer>
 
 </body>
